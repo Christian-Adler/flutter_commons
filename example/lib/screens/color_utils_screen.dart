@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_commons/color_utils.dart';
+import 'package:flutter_commons/utils/color_utils.dart';
 
 class ColorUtilsScreen extends StatefulWidget {
   static const routeName = '/color-utils';

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_commons/device_storage.dart';
+import 'package:flutter_commons/utils/device_storage.dart';
 
 class DeviceStorageScreen extends StatefulWidget {
   static const routeName = '/device-storage-utils';
@@ -11,7 +11,6 @@ class DeviceStorageScreen extends StatefulWidget {
 }
 
 class _DeviceStorageScreenState extends State<DeviceStorageScreen> {
-
   void _readAll() async {
     print((await DeviceStorage.readAll()).toString());
   }
