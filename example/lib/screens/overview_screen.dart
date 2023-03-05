@@ -3,6 +3,7 @@ import 'package:example/screens/device_storage_screen.dart';
 import 'package:example/screens/table_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'animation_screen.dart';
 import 'dialogs_screen.dart';
 import 'gradient_app_bar_screen.dart';
 
@@ -38,6 +39,10 @@ class OverviewScreen extends StatelessWidget {
             ElevatedButton(
               onPressed: () => Navigator.of(context).pushNamed(TableScreen.routeName),
               child: const Text('Table'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.of(context).pushNamed(AnimationScreen.routeName),
+              child: const Text('Animation'),
             ),
           ]),
         ),

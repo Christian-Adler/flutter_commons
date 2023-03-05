@@ -1,3 +1,4 @@
+import 'package:example/screens/animation_screen.dart';
 import 'package:example/screens/color_utils_screen.dart';
 import 'package:example/screens/device_storage_screen.dart';
 import 'package:example/screens/dialogs_screen.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         DeviceStorageScreen.routeName: (context) => const DeviceStorageScreen(),
         DialogsScreen.routeName: (context) => const DialogsScreen(),
         TableScreen.routeName: (context) => const TableScreen(),
+        AnimationScreen.routeName: (context) => const AnimationScreen(),
       },
     );
   }
