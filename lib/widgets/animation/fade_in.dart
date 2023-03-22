@@ -21,7 +21,7 @@ class _FadeInState extends State<FadeIn> with TickerProviderStateMixin {
   )..forward(); // ..repeat(reverse: true);
   late final Animation<double> _animation = CurvedAnimation(
     parent: _controller,
-    curve: Curves.easeIn,
+    curve: Curves.easeOut,
   );
 
   @override
