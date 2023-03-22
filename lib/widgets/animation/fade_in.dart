@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 
 class FadeIn extends StatefulWidget {
   final Widget child;
+  final int durationMS;
 
-  const FadeIn({Key? key, required this.child}) : super(key: key);
+  const FadeIn({
+    Key? key,
+    required this.child,
+    this.durationMS = 2000,
+  }) : super(key: key);
 
   @override
   State<FadeIn> createState() => _FadeInState();
@@ -11,7 +16,7 @@ class FadeIn extends StatefulWidget {
 
 class _FadeInState extends State<FadeIn> with TickerProviderStateMixin {
   late final AnimationController _controller = AnimationController(
-    duration: const Duration(seconds: 2),
+    duration: Duration(milliseconds: widget.durationMS),
     vsync: this,
   )..forward(); // ..repeat(reverse: true);
   late final Animation<double> _animation = CurvedAnimation(
