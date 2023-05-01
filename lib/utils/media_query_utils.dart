@@ -16,6 +16,10 @@ class MediaQueryUtils {
     return mediaIsLandscape(mediaQueryData);
   }
 
+  bool get isPortrait {
+    return mediaIsPortrait(mediaQueryData);
+  }
+
   bool get isTablet {
     return mediaIsTablet(mediaQueryData);
   }
@@ -26,6 +30,10 @@ class MediaQueryUtils {
 
   static bool mediaIsLandscape(MediaQueryData mediaQueryData) {
     return mediaOrientation(mediaQueryData) == Orientation.landscape;
+  }
+
+  static bool mediaIsPortrait(MediaQueryData mediaQueryData) {
+    return mediaOrientation(mediaQueryData) == Orientation.portrait;
   }
 
   static bool mediaIsTablet(MediaQueryData mediaQueryData) {
