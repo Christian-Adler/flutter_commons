@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
 class MediaQueryUtils {
-  final MediaQueryData mediaQueryData;
+  late final MediaQueryData mediaQueryData;
 
   /// usage:
   ///
   /// final mediaQueryInfo = MediaQueryUtils(MediaQuery.of(context));
   MediaQueryUtils(this.mediaQueryData);
+
+  MediaQueryUtils.of(BuildContext context) {
+    mediaQueryData = MediaQuery.of(context);
+  }
 
   Orientation get orientation {
     return mediaOrientation(mediaQueryData);
