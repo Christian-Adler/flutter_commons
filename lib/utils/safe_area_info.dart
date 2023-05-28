@@ -10,7 +10,7 @@ class SafeAreaInfo {
     return 0;
   }
 
-  /// Has to be called in build before use of SafeArea - e.g. in the main App
+  /// Has to be called in build before use of SafeArea - e.g. in the main App (but after MultiProvider)
   static void determineSafeAreaHeight(BuildContext context) {
     _padding = MediaQuery.of(context).padding;
   }
