@@ -34,5 +34,5 @@ migrate_working_dir/
 build/
 
 # Generated files for ios maxos
-*Generated.xconfig*
+*Generated.xcconfig
 flutter_export_environment.sh
