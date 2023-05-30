@@ -23,4 +23,21 @@ class ColorUtils {
     var hsl = HSLColor.fromColor(c);
     return hsl.withHue((hsl.hue + add) % 360).toColor();
   }
+
+  /// usage: e.g. <pre>MaterialColor mColor = customMaterialColor(const Color(0xffbab0d4));</pre>
+  static MaterialColor customMaterialColor(Color mainColor) {
+    Map<int, Color> color = {
+      50: mainColor.withOpacity(.1),
+      100: mainColor.withOpacity(.2),
+      200: mainColor.withOpacity(.3),
+      300: mainColor.withOpacity(.4),
+      400: mainColor.withOpacity(.5),
+      500: mainColor.withOpacity(.6),
+      600: mainColor.withOpacity(.7),
+      700: mainColor.withOpacity(.8),
+      800: mainColor.withOpacity(.9),
+      900: mainColor.withOpacity(1),
+    };
+    return MaterialColor(mainColor.value, color);
+  }
 }
