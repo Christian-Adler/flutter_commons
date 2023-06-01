@@ -26,31 +26,17 @@ class ColorUtils {
 
   /// usage: e.g. <pre>MaterialColor mColor = customMaterialColor(const Color(0xffbab0d4));</pre>
   static MaterialColor customMaterialColor(Color mainColor) {
-    // mit transparenz... :/
-    // Map<int, Color> color = {
-    //   50: mainColor.withOpacity(.1),
-    //   100: mainColor.withOpacity(.2),
-    //   200: mainColor.withOpacity(.3),
-    //   300: mainColor.withOpacity(.4),
-    //   400: mainColor.withOpacity(.5),
-    //   500: mainColor.withOpacity(.6),
-    //   600: mainColor.withOpacity(.7),
-    //   700: mainColor.withOpacity(.8),
-    //   800: mainColor.withOpacity(.9),
-    //   900: mainColor.withOpacity(1),
-    // };
-
     Map<int, Color> color = {
-      50: lighten(mainColor, 90),
-      100: lighten(mainColor, 80),
-      200: lighten(mainColor, 60),
-      300: lighten(mainColor, 40),
-      400: lighten(mainColor, 20),
+      50: ColorUtils.lighten(mainColor, 88),
+      100: ColorUtils.lighten(mainColor, 70),
+      200: ColorUtils.lighten(mainColor, 51),
+      300: ColorUtils.lighten(mainColor, 31),
+      400: ColorUtils.lighten(mainColor, 15),
       500: mainColor,
-      600: darken(mainColor, 20),
-      700: darken(mainColor, 40),
-      800: darken(mainColor, 60),
-      900: darken(mainColor, 80),
+      600: ColorUtils.darken(mainColor, 8),
+      700: ColorUtils.darken(mainColor, 20),
+      800: ColorUtils.darken(mainColor, 33),
+      900: ColorUtils.darken(mainColor, 52),
     };
     return MaterialColor(mainColor.value, color);
   }
