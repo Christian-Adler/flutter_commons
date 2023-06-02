@@ -12,6 +12,9 @@ class GradientAppBarScreen extends StatelessWidget {
       appBar: GradientAppBar(
         title: const Text('GradientAppBar'),
         gradientColors: const [Colors.blueAccent, Colors.cyanAccent],
+        foregroundColor: Colors.white,
+        actions: const [Icon(Icons.add), Icon(Icons.add_a_photo)],
+        actionsColor: Colors.red,
       ),
       body: Container(),
     );

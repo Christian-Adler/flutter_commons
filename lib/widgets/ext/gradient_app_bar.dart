@@ -6,6 +6,7 @@ class GradientAppBar extends AppBar {
       required Widget title,
       required List<Color> gradientColors,
       Color? foregroundColor,
+      Color? actionsColor,
       List<Widget>? actions,
       bool automaticallyImplyLeading = true})
       : super(
@@ -20,5 +21,6 @@ class GradientAppBar extends AppBar {
             ),
           ),
           actions: actions,
+          actionsIconTheme: IconThemeData(color: actionsColor),
         );
 }
