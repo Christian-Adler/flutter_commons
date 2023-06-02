@@ -45,6 +45,7 @@ class Dialogs {
         content: c,
         duration: d,
         action: snackBarAction,
+        // behavior: SnackBarBehavior.floating,
       ),
     );
   }

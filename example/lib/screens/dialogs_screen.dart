@@ -26,7 +26,7 @@ class DialogsScreen extends StatelessWidget {
               onPressed: () {
                 Dialogs.showSnackBar('Some text to show in SnackBar', context);
               },
-              child: const Text('DeviceStorage'),
+              child: const Text('Show Snackbar'),
             ),
           ]),
         ),
