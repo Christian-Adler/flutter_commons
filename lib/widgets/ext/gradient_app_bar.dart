@@ -21,6 +21,6 @@ class GradientAppBar extends AppBar {
             ),
           ),
           actions: actions,
-          actionsIconTheme: IconThemeData(color: actionsColor),
+          actionsIconTheme: actionsColor == null ? null : IconThemeData(color: actionsColor),
         );
 }
