@@ -10,6 +10,7 @@ class Dialogs {
     String text,
     BuildContext context, {
     String? title,
+    String? buttonText,
   }) async {
     return showDialog<void>(
       context: context,
@@ -23,7 +24,7 @@ class Dialogs {
               onPressed: () {
                 Navigator.of(ctx).pop();
               },
-              child: const Text('Okay'))
+              child: Text(buttonText ?? 'Okay'))
         ],
       ),
     );
