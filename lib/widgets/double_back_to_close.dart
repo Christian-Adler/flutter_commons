@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_commons/utils/dialogs.dart';
 
 class DoubleBackToClose extends StatefulWidget {
-  final Widget child; // Make Sure this child has a Scaffold widget as parent.
+  /// Make Sure this child has a Scaffold widget as parent.
+  final Widget child;
+
   /// Falls gesetzt wird dieser Callback zuerst aufgerufen.
   /// Falls true returned wird, wird abgebrochen.
   final Future<bool> Function()? checkCallback;
 
+  /// Make Sure the child has a Scaffold widget as parent.
+  /// If checkCallback is set it will be called first. If it returns true close app is canceled.
   const DoubleBackToClose({
     super.key,
     required this.child,
