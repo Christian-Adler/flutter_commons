@@ -21,8 +21,8 @@ class TableScreen extends StatelessWidget {
                 1: FlexColumnWidth(),
                 2: FlexColumnWidth(),
               },
-              border: TableBorder.symmetric(
-                inside: const BorderSide(width: 1, color: Colors.black12),
+              border: const TableBorder.symmetric(
+                inside: BorderSide(width: 1, color: Colors.black12),
               ),
               children: [
                 TableUtils.tableHeadline('C0', ['C1', 'C2']),

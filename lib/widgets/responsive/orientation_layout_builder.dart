@@ -4,7 +4,7 @@ class OrientationLayoutBuilder extends StatelessWidget {
   final Widget Function(BuildContext context)? landscape;
   final Widget Function(BuildContext context)? portrait;
 
-  const OrientationLayoutBuilder({Key? key, this.landscape, this.portrait}) : super(key: key);
+  const OrientationLayoutBuilder({super.key, this.landscape, this.portrait});
 
   @override
   Widget build(BuildContext context) {

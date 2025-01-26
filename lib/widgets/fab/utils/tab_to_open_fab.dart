@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TabToOpenFab extends StatelessWidget {
-  const TabToOpenFab({Key? key, required this.openFabIconData, required this.open, required this.toggle})
-      : super(key: key);
+  const TabToOpenFab({super.key, required this.openFabIconData, required this.open, required this.toggle});
 
   final IconData openFabIconData;
   final bool open;

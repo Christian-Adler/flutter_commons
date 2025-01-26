@@ -3,16 +3,13 @@ import 'package:flutter/material.dart';
 class GradientAppBar extends AppBar {
   GradientAppBar(
       {super.key,
-      required Widget title,
+      required Widget super.title,
       required List<Color> gradientColors,
-      Color? foregroundColor,
+      super.foregroundColor,
       Color? actionsColor,
-      List<Widget>? actions,
-      bool automaticallyImplyLeading = true})
+      super.actions,
+      super.automaticallyImplyLeading})
       : super(
-          title: title,
-          automaticallyImplyLeading: automaticallyImplyLeading,
-          foregroundColor: foregroundColor,
           flexibleSpace: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -20,7 +17,6 @@ class GradientAppBar extends AppBar {
               ),
             ),
           ),
-          actions: actions,
           actionsIconTheme: actionsColor == null ? null : IconThemeData(color: actionsColor),
         );
 }

@@ -5,7 +5,7 @@ class DeviceDependentWidthConstrainedBox extends StatelessWidget {
   static const double tabletMaxWidth = 700;
   static const double tabletMinWidth = 500;
 
-  const DeviceDependentWidthConstrainedBox({Key? key, required this.child}) : super(key: key);
+  const DeviceDependentWidthConstrainedBox({super.key, required this.child});
   final Widget child;
 
   @override

@@ -14,7 +14,7 @@ class AnimationScreen extends StatelessWidget {
         width: double.infinity,
         child: SingleChildScrollView(
           child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             FadeIn(

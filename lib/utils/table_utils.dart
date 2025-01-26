@@ -26,7 +26,7 @@ class TableUtils {
               ),
             ),
           )
-          .toList(),
+          ,
     ]);
   }
 
@@ -46,7 +46,7 @@ class TableUtils {
               ),
             ),
           )
-          .toList(),
+          ,
     ]);
   }
 }

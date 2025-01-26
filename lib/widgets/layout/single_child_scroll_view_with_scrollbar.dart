@@ -8,13 +8,13 @@ class SingleChildScrollViewWithScrollbar extends StatefulWidget {
   final void Function(ScrollPosition value)? scrollPositionHandler;
 
   const SingleChildScrollViewWithScrollbar({
-    Key? key,
+    super.key,
     required this.child,
     this.scrollDirection = Axis.vertical,
     this.getScrollPosCallback,
     this.onRefreshCallback,
     this.scrollPositionHandler,
-  }) : super(key: key);
+  });
 
   @override
   State<SingleChildScrollViewWithScrollbar> createState() => _SingleChildScrollViewWithScrollbarState();

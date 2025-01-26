@@ -6,7 +6,7 @@ class SettingsCard extends StatelessWidget {
   final List<Widget> children;
 
   /// Damit die Card die Device-Constraints einhalten kann, muss umschliessende Column z.B. center sein.
-  const SettingsCard({Key? key, required this.title, required this.children}) : super(key: key);
+  const SettingsCard({super.key, required this.title, required this.children});
 
   Widget _buildTitle(BuildContext context) {
     if (title is Widget) return title as Widget;

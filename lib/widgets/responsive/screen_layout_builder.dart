@@ -15,13 +15,13 @@ class ScreenLayoutBuilder extends StatelessWidget {
   final Widget Function(BuildContext context)? floatingActionButtonBuilder;
 
   const ScreenLayoutBuilder({
-    Key? key,
+    super.key,
     required this.bodyBuilder,
     this.drawerBuilder,
     this.appBarBuilder,
     this.floatingActionButtonBuilder,
     this.createNestedNavigatorWithKey,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
